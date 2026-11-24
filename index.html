@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#071a35">
+<meta name="description" content="瑞克专属网络工具服务｜MahsaNG 与 MahsaVPN 安装指引、使用帮助和售后维护入口。">
+<title>瑞克专属网络工具服务</title>
+<style>
+:root{color-scheme:dark;--bg:#061329;--panel:#0d2140;--panel2:#10294d;--line:rgba(133,183,255,.18);--blue:#55a8ff;--cyan:#63e0ed;--text:#edf5ff;--muted:#a8bdd8;--gold:#ffd58a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 85% -10%,#164a7b 0,transparent 38%),linear-gradient(180deg,#071a35,#050e20 70%);color:var(--text);font:15px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(100% - 32px,760px);margin:auto}.top{padding:22px 0 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;letter-spacing:.3px;font-size:16px}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:500;letter-spacing:1.5px}.pill{border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#bfe6ff;font-size:11px}
+.hero{padding:28px 0 25px}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:700}.hero h1{font-size:clamp(30px,8vw,46px);line-height:1.18;margin:12px 0 13px;letter-spacing:-1px}.hero h1 span{color:#78bcff}.hero p{margin:0;color:var(--muted);max-width:590px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 17px;border-radius:13px;background:linear-gradient(135deg,#2789ed,#1763c1);font-weight:750;box-shadow:0 8px 24px #0065c533}.btn.secondary{background:#102849;border:1px solid var(--line);box-shadow:none;color:#d9ecff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0 25px}.stat{padding:12px 10px;border:1px solid var(--line);border-radius:14px;background:#0b1e39a8;text-align:center}.stat b{display:block;font-size:14px}.stat span{font-size:11px;color:var(--muted)}
+section{margin:24px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:12px}.section-head h2{margin:0;font-size:20px}.section-head p{margin:0;color:var(--muted);font-size:12px}
+.card{background:linear-gradient(145deg,#102747eF,#0a1b34);border:1px solid var(--line);border-radius:18px;padding:17px;margin:10px 0;box-shadow:0 12px 32px #0002}.app{display:flex;align-items:center;gap:13px}.app-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#1d72bd,#123a6d);font-weight:900;font-size:20px;color:white;flex:none}.app h3{margin:0;font-size:17px}.app p{margin:2px 0 0;color:var(--muted);font-size:12px}.app .grow{flex:1;min-width:0}.tag{font-size:10px;color:#9edcff;border:1px solid #3988c966;padding:3px 7px;border-radius:7px;white-space:nowrap}
+.card-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.smallbtn{border-radius:10px;padding:9px 12px;background:#173b65;border:1px solid #4d8ac344;font-size:13px;font-weight:650}.smallbtn.primary{background:#176dbe;border-color:#3d9af0}
+.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#30281766;border-radius:0 10px 10px 0;color:#e8d9b8;font-size:12px;margin-top:12px}
+.steps{display:grid;gap:10px}.step{display:flex;gap:12px;align-items:flex-start}.num{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:#174b7e;color:#a9dcff;font-weight:800;flex:none}.step b{display:block}.step p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.contact{padding:15px;border:1px solid var(--line);border-radius:15px;background:#0e2341}.contact strong{display:block;font-size:14px}.contact span{display:block;color:var(--muted);font-size:12px;margin:3px 0 10px;overflow-wrap:anywhere}
+.faq details{border-bottom:1px solid var(--line);padding:12px 2px}.faq summary{font-weight:650;cursor:pointer}.faq details p{margin:7px 0 0;color:var(--muted);font-size:13px}
+footer{padding:22px 0 calc(30px + env(safe-area-inset-bottom));color:#829ab8;font-size:11px;text-align:center}.footer-brand{color:#c3d9f4;font-weight:700;font-size:13px;margin-bottom:5px}
+.bottom{position:sticky;bottom:0;padding:10px 0 calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,transparent,#061329 30%);z-index:5}.bottom a{display:block;text-align:center}
+@media(min-width:620px){.hero{padding:48px 0 35px}.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card-grid .card{margin:0}.bottom{display:none}}
+@media(max-width:380px){.wrap{width:min(100% - 24px,760px)}.contact-grid{grid-template-columns:1fr}.stats{gap:6px}.stat{padding:10px 5px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand">瑞克专属网络工具服务<small>RICK · NETWORK TOOL SERVICE</small></div>
+  <div class="pill">客户服务中心</div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">WELCOME · SERVICE PORTAL</div>
+  <h1>安装有人带，<br><span>使用有人帮。</span></h1>
+  <p>这里提供 MahsaNG / MahsaVPN 客户端下载入口、基础安装指引与售后联系渠道。第一次使用或遇到问题，都可以联系瑞克协助处理。</p>
+  <div class="hero-actions">
+    <a class="btn" href="#download">获取客户端 <span>↓</span></a>
+    <a class="btn secondary" href="#support">联系售后</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>安装协助</b><span>按步骤指导</span></div>
+  <div class="stat"><b>问题排查</b><span>常见故障协助</span></div>
+  <div class="stat"><b>后续维护</b><span>联系人工客服</span></div>
+</div>
+
+<section id="download">
+  <div class="section-head"><h2>01 / 客户端下载</h2><p>使用软件原名称</p></div>
+  <div class="card">
+    <div class="app">
+      <div class="app-icon">A</div>
+      <div class="grow"><h3>MahsaNG</h3><p>Android 安卓设备客户端</p></div>
+      <span class="tag">ANDROID</span>
+    </div>
+    <div class="card-actions">
+      <a class="smallbtn primary" href="https://www.mahsaserver.com/download/" target="_blank" rel="noopener">官方客户端下载页</a>
+      <a class="smallbtn" href="https://github.com/GFW-knocker/MahsaNG/releases" target="_blank" rel="noopener">GitHub Releases</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="app">
+      <div class="app-icon">iOS</div>
+      <div class="grow"><h3>MahsaVPN</h3><p>iPhone / iPad 苹果设备客户端</p></div>
+      <span class="tag">iOS</span>
+    </div>
+    <div class="card-actions">
+      <a class="smallbtn primary" href="https://www.mahsaserver.com/download/" target="_blank" rel="noopener">官方客户端下载页</a>
+    </div>
+  </div>
+  <div class="notice">请优先通过软件官方页面或官方应用商店获取安装包。客户端只是软件本身，不代表自动包含可用的网络配置或服务。请勿安装来历不明的修改版。</div>
+</section>
+
+<section id="guide">
+  <div class="section-head"><h2>02 / 使用流程</h2><p>新手按顺序操作</p></div>
+  <div class="card steps">
+    <div class="step"><div class="num">1</div><div><b>选择对应设备</b><p>安卓手机选择 MahsaNG；苹果设备选择 MahsaVPN。请勿下载错版本。</p></div></div>
+    <div class="step"><div class="num">2</div><div><b>安装并打开客户端</b><p>按照手机系统提示完成安装和必要权限确认。</p></div></div>
+    <div class="step"><div class="num">3</div><div><b>获取有授权的配置</b><p>如需专属配置，请通过客服私下确认来源、使用范围和有效期。不要把个人订阅链接或配置二维码公开发到群聊、朋友圈。</p></div></div>
+    <div class="step"><div class="num">4</div><div><b>导入、测试并连接</b><p>根据客服给出的具体配置格式和步骤导入。首次连接遇到问题，请截图联系售后。</p></div></div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="section-head"><h2>03 / 联系瑞克</h2><p>人工协助 · 售后维护</p></div>
+  <div class="contact-grid">
+    <div class="contact">
+      <strong>QQ 客服</strong><span id="qq">1064783925</span>
+      <button class="smallbtn primary" type="button" onclick="copyText('1064783925','QQ 号码已复制')">复制 QQ 号码</button>
+    </div>
+    <div class="contact">
+      <strong>微信客服</strong><span id="wechat">Ren-Rick</span>
+      <button class="smallbtn primary" type="button" onclick="copyText('Ren-Rick','微信号已复制')">复制微信号</button>
+    </div>
+  </div>
+  <div class="card">
+    <b>联系时请尽量提供这些信息</b>
+    <p style="margin:6px 0 0;color:var(--muted);font-size:13px">手机型号、安卓 / iOS 版本、客户端名称、问题出现的页面截图，以及大致发生时间。请勿发送支付密码、账号密码或不必要的个人隐私信息。</p>
+  </div>
+</section>
+
+<section id="maintenance">
+  <div class="section-head"><h2>04 / 售后与维护说明</h2><p>服务范围先说清楚</p></div>
+  <div class="card">
+    <div class="steps">
+      <div class="step"><div class="num">✓</div><div><b>安装与基础设置协助</b><p>客户端安装、基础操作说明及配置导入指导。</p></div></div>
+      <div class="step"><div class="num">✓</div><div><b>常见问题排查</b><p>协助检查网络环境、客户端状态和常见设置问题。</p></div></div>
+      <div class="step"><div class="num">✓</div><div><b>后续使用咨询</b><p>在双方约定的服务范围内提供持续协助；如涉及上游服务或第三方配置，以其实际可用性和授权规则为准。</p></div></div>
+    </div>
+    <div class="notice">网络服务受设备、运营商、地区网络环境及第三方服务状态影响，无法承诺任何线路永久稳定或始终可用。客户端更新、第三方服务调整或授权变化，也可能影响使用。具体服务内容、期限和费用以双方实际约定为准。</div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="section-head"><h2>05 / 常见问题</h2><p>快速了解</p></div>
+  <div class="card">
+    <details><summary>下载客户端后就能直接使用吗？</summary><p>不一定。MahsaNG / MahsaVPN 是客户端，是否能连接取决于可用且有权使用的网络配置或服务。安装软件不等于已经开通服务。</p></details>
+    <details><summary>为什么安装后无法连接？</summary><p>可能与配置状态、网络环境、系统权限或第三方服务状态有关。请把错误提示截图发给客服，先不要反复删除或导入来源不明的配置。</p></details>
+    <details><summary>换手机后怎么办？</summary><p>请先联系客服确认原服务是否支持迁移，以及是否需要重新配置。不要把个人订阅链接公开分享。</p></details>
+    <details><summary>网页能直接提供订阅链接吗？</summary><p>为保护个人配置安全，本页面不公开展示订阅链接、密码或二维码。若有经授权提供的个人配置，请通过一对一客服渠道交付。</p></details>
+  </div>
+</section>
+</main>
+
+<div class="bottom"><a class="btn" href="#support">需要帮助？联系瑞克客服</a></div>
+<footer>
+  <div class="footer-brand">瑞克专属网络工具服务</div>
+  MahsaNG 与 MahsaVPN 为其各自权利人的软件名称。本服务页面用于客户指引，不代表软件开发者官方页面。<br>
+  © <span id="year"></span> Rick Service · 客户服务指引
+</footer>
+</div>
+<script>
+function copyText(value, message){
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(value).then(()=>alert(message)).catch(()=>fallbackCopy(value,message));
+  }else{fallbackCopy(value,message);}
+}
+function fallbackCopy(value,message){
+  const el=document.createElement('textarea');el.value=value;el.style.position='fixed';el.style.opacity='0';document.body.appendChild(el);el.select();
+  try{document.execCommand('copy');alert(message);}catch(e){alert('复制失败，请手动复制：'+value);}
+  el.remove();
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
